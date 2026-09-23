@@ -1,0 +1,7 @@
+[
+ {"name":"Machine Learning Specialization","platform":"Coursera","difficulty":"Intermediate","rating":4.9,"description":"Build practical ML intuition and models with a project-first curriculum.","skills":["Machine Learning","Python","Scikit-learn"],"link":"https://www.coursera.org"},
+ {"name":"SQL for Data Analysis","platform":"Udemy","difficulty":"Beginner","rating":4.7,"description":"Query, clean, and communicate insights from real-world datasets.","skills":["SQL","Statistics"],"link":"https://www.udemy.com"},
+ {"name":"Docker & Kubernetes Bootcamp","platform":"edX","difficulty":"Advanced","rating":4.8,"description":"Containerize applications and build reliable deployment workflows.","skills":["Docker","Kubernetes"],"link":"https://www.edx.org"},
+ {"name":"Data Visualization with Tableau","platform":"Coursera","difficulty":"Intermediate","rating":4.6,"description":"Turn complex analysis into clear, persuasive dashboards.","skills":["Tableau","Data Visualization"],"link":"https://www.coursera.org"},
+ {"name":"Modern JavaScript From The Beginning","platform":"Udemy","difficulty":"Intermediate","rating":4.8,"description":"Master the language that powers modern product experiences.","skills":["JavaScript","REST APIs"],"link":"https://www.udemy.com"}
+]
