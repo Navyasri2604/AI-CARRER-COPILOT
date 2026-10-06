@@ -1,0 +1,31 @@
+services:
+  - type: web
+    name: ai-career-copilot-backend
+    env: python
+    buildCommand: "./build.sh"
+    startCommand: "gunicorn ai_career_copilot.wsgi:application"
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.8.10
+      - key: SECRET_KEY
+        generateValue: true
+      - key: DEBUG
+        value: "False"
+      - key: ALLOWED_HOSTS
+        value: "*"
+    rootDir: "AI-CARRER-COPILOT-main"
+
+  - type: web
+    name: ai-career-copilot-frontend
+    env: node
+    buildCommand: "npm install && npm run build"
+    startCommand: "npm run preview"
+    envVars:
+      - key: NODE_VERSION
+        value: 18
+      - key: VITE_API_URL
+        fromService:
+          name: ai-career-copilot-backend
+          type: web
+          envVarKey: RENDER_EXTERNAL_URL
+    rootDir: "frontend"
